@@ -4,11 +4,11 @@
   } else if(typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.lsbridge = factory();
+    root.lsbus = factory();
   }
 }(this, function() {
 
-  /* 
+  /*
     - Storing messages in localStorage.
     - Clients subscribe to the changes and
       they get notified if a new message arrives.
@@ -77,7 +77,7 @@
       ls.setItem(namespace, raw);
     };
 
-    
+
     api.subscribe = function(namespace, cb) {
       if(!listeners[namespace]) {
         listeners[namespace] = [];

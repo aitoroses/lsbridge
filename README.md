@@ -1,4 +1,6 @@
-# The Local Storage Bridge
+# The Local Storage Bus
+
+This is a fork of [lsbridge](https://github.com/krasimir/lsbridge).
 
 1K library for exchanging messages between tabs in a same browser. It uses the local storage as a communication channel.
 
@@ -6,24 +8,24 @@
 
 ## Usage
 
-Add **lsbridge.min.js** to your page:
+Add **lsbus.min.js** to your page:
 
 ```html
-<script src="js/lsbridge.min.js"></script>
+<script src="js/lsbus.min.js"></script>
 ```
 
-There is a global object `lsbridge` available.
+There is a global object `lsbus` available.
 
 Send messages:
 
 ```js
-lsbridge.send('my-namespace', { message: 'Hello world!' });
+lsbus.send('my-namespace', { message: 'Hello world!' });
 ```
 
 Listen for messages:
 
 ```js
-lsbridge.subscribe('my-namespace', function(data) {
+lsbus.subscribe('my-namespace', function(data) {
   console.log(data); // prints: { message: 'Hello world!'}
 });
 ```
@@ -31,13 +33,13 @@ lsbridge.subscribe('my-namespace', function(data) {
 Find out if `localStorage` is available:
 
 ```js
-console.log(lsbridge.isLSAvailable); // prints "true" or "false"
+console.log(lsbus.isLSAvailable); // prints "true" or "false"
 ```
 
 ## Compilation
 
 * Run `npm install` to get UglifyJS installed.
-* Run `npm run-script compile` to produce `build/jsbridge.min.js`
+* Run `npm run-script compile` to produce `build/lsbus.min.js`
 
 ## Example
 
