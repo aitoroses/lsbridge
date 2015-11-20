@@ -2,7 +2,7 @@
   "name": "lsbus",
   "version": "1.0.0",
   "description": "Using the local storage as a communication channel",
-  "main": "buils/lsbus.min.js",
+  "main": "build/lsbus.min.js",
   "author": {
     "name": "Aitor Oses",
     "email": "aitor.oses@gmail.com"
