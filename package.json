@@ -5,7 +5,7 @@
   "main": "buils/lsbus.min.js",
   "author": {
     "name": "Aitor Oses",
-    "email": "aitor.oses@gmail.com",
+    "email": "aitor.oses@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
