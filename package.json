@@ -1,6 +1,6 @@
 {
   "name": "lsbus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Using the local storage as a communication channel",
   "main": "build/lsbus.min.js",
   "author": {
